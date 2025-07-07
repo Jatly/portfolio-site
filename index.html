@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jatly | Frontend Developer Portfolio</title>
+    <link id="themeStylesheet" rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">JATLY.dev</div>
+
+        <nav class="nav-links" id="main-nav" role="navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#techstack">Tech Stack</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle" title="Toggle Theme">
+                🌞 <span id="themeLabel">Light Theme</span>
+            </button>
+
+
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Jatly</span></h1>
+                <p>A passionate Frontend Developer with real-world experience in building engaging UIs, Python GUI apps,
+                    and working with APIs.</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+            <div class="hero-img">
+                <img src="images/heroback-dark.png" alt="Hero Illustration" id="hero-img" />
+            </div>
+
+        </section>
+
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I create intuitive user interfaces and have hands-on experience in API integration, OpenCV-based GUI
+                projects, and building dynamic websites using HTML, CSS, JS, and Python. I love making things both look
+                and work great!</p>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="api">API</button>
+            </div>
+
+            <div class="project-grid">
+
+                <a href="https://github.com/Jatly/weather-app" target="_blank" rel="noopener noreferrer"
+                    class="project-card" data-category="software">
+                    <img src="images/1.png" alt="Inventory Management System Screenshot" loading="lazy">
+                    <h3>Inventory Management System</h3>
+                    <p>Python + Tkinter, A desktop-based inventory management tool.</p>
+                </a>
+
+                <a href="https://github.com/Jatly/portfolio-site" target="_blank" rel="noopener noreferrer"
+                    class="project-card" data-category="software">
+                    <img src="images/2.png" alt="Sales-Tracker Screenshot" loading="lazy">
+                    <h3>Sales-Tracker</h3>
+                    <p>Python + Tkinter, A desktop app to manage and analyze sales data.</p>
+                </a>
+
+                <a href="https://github.com/Jatly/green-screen-replacement" target="_blank" rel="noopener noreferrer"
+                    class="project-card" data-category="frontend">
+                    <img src="images/3.png" alt="Glow-Cart Screenshot" loading="lazy">
+                    <h3>Glow-Cart</h3>
+                    <p>HTML + CSS, Landing page for scented candles.</p>
+                </a>
+
+                <a href="https://github.com/Jatly/virtual-mouse" target="_blank" rel="noopener noreferrer"
+                    class="project-card" data-category="frontend">
+                    <img src="images/4.png" alt="Protect-Wildlife Screenshot" loading="lazy">
+                    <h3>Protect-Wildlife</h3>
+                    <p>HTML + CSS + JavaScript, Parallax landing page for wildlife protection</p>
+                </a>
+
+                <a href="https://github.com/Jatly/youtube-summarizer" target="_blank" rel="noopener noreferrer"
+                    class="project-card" data-category="api">
+                    <img src="images/5.png" alt="Face Blur API Screenshot" loading="lazy">
+                    <h3>Face Blur API</h3>
+                    <p>Python + Fast API, Application that automatically blurs a specific person’s face from an image or
+                        video using a reference image.</p>
+                </a>
+
+                <a href="https://github.com/Jatly/motion-detector" target="_blank" rel="noopener noreferrer"
+                    class="project-card" data-category="frontend">
+                    <img src="images/6.png" alt="Soup-Cart Screenshot" loading="lazy">
+                    <h3>Soup-Cart</h3>
+                    <p>HTML + CSS + JavaScript, Landing page for a soup shop</p>
+                </a>
+
+                <a href="https://github.com/Jatly/image-background-remover" target="_blank" rel="noopener noreferrer"
+                    class="project-card" data-category="ml">
+                    <img src="images/7.png" alt="Background Remover Screenshot" loading="lazy">
+                    <h3>Green Screen Background Replacement</h3>
+                    <p>Python + OpenCV, A real-time green screen background replacement using OpenCV and machine
+                        learning.</p>
+                </a>
+
+                <a href="https://github.com/Jatly/eco-logistics-dashboard" target="_blank" rel="noopener noreferrer"
+                    class="project-card" data-category="ml">
+                    <img src="images/8.png" alt="Eco Logistics Dashboard Screenshot" loading="lazy">
+                    <h3>Virtual Mouse</h3>
+                    <p>Python + OpenCV,Virtual mouse using computer vision and machine learning controlled by finger</p>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="techstack" id="techstack">
+            <h2>Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-html5" aria-hidden="true"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js" aria-hidden="true"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-react" aria-hidden="true"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-python" aria-hidden="true"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-eye" aria-hidden="true"></i>
+                    <span>OpenCV</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-figma" aria-hidden="true"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in working together? Drop me a message!</p>
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" autocomplete="on">
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <!-- Honeypot field (anti-spam) -->
+  <p hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+  
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-text">© 2025 Jatly.dev | Frontend & Python Developer</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
