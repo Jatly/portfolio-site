@@ -8,8 +8,7 @@
     <link id="themeStylesheet" rel="stylesheet" href="style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <form name="contact" method="POST" data-netlify="true" action="thanks.html" netlify-honeypot="bot-field"
-        autocomplete="on">
+
 
 
 </head>
@@ -181,13 +180,18 @@
             <p>Interested in working together? Drop me a message!</p>
             <form name="contact" method="POST" data-netlify="true" action="thanks.html" netlify-honeypot="bot-field"
                 autocomplete="on">
+
+                <!-- Required hidden input for Netlify -->
                 <input type="hidden" name="form-name" value="contact" />
-                <p style="display:none;">
+
+                <!-- Netlify honeypot field to prevent spam (hidden from users) -->
+                <p style="display: none;">
                     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                 </p>
 
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
+                <!-- Your actual form inputs -->
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
